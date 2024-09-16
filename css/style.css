@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2E2E2E; /* Cinza escuro para o fundo */
+    color: #E0E0E0; /* Texto em cinza claro */
+    font-family: 'Poppins', sans-serif; /* Aplica a fonte Poppins */
+}
+
+header {
+    background-color: #1C1C1C; /* Preto muito escuro para o cabeçalho */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique acima do conteúdo principal */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    height: 100%; /* Ajuste se necessário */
+}
+
+
+nav a {
+    color: #E0E0E0; /* Links em cinza claro */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #FFD700; /* Cor de destaque ao passar o mouse (amarelo dourado) */
+}
+
+main {
+    padding: 20px;
+    margin-top: 60px; /* Espaço para o cabeçalho fixo */
+}
+
+footer {
+    background-color: #1C1C1C; /* Preto muito escuro para o rodapé */
+    color: #E0E0E0; /* Texto em cinza claro */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS para organizar colunas verticais e posicionar o botão no final */
+.container-gastos {
+    display: flex;
+    justify-content: space-around; /* Coloca as colunas lado a lado */
+    margin-top: 50px;
+}
+
+.coluna {
+    background-color: #1C1C1C;
+    padding: 15px;
+    border-radius: 8px;
+    width: 25%; /* Ajuste conforme necessário */
+    color: #E0E0E0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-adicionar {
+    margin-top: 10px;
+    background-color: #a70404;
+    color: #1C1C1C;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-adicionar:hover {
+    background-color: #6e0303;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#progress-bar {
+    height: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#progress-bar-inner {
+    height: 100%;
+    width: 0;
+    background-color: green;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#percentual-gasto {
+    margin-right: 10px;
+    font-weight: bold;
+}

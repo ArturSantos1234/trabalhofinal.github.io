@@ -1,0 +1,54 @@
+/* Reset de margens e box-model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o estilo da página */
+body {
+    background-color: #2E2E2E; /* Fundo cinza escuro */
+    color: #E0E0E0; /* Cor clara para o texto */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Estilo para a div das perguntas */
+.question {
+    display: none; /* Ocultada por padrão */
+    text-align: center;
+}
+
+.question.active {
+    display: block; /* Exibir apenas a pergunta ativa */
+}
+
+/* Estilo para os botões */
+button {
+    padding: 10px 20px;
+    margin-top: -50px; /* Move o botão para cima */
+    border: none;
+    background-color: #a70404; /* Amarelo dourado */
+    color: #1C1C1C; /* Texto escuro */
+    cursor: pointer;
+    border-radius: 25px; /* Borda arredondada */
+    font-size: 16px;
+    display: block; /* Isso faz o botão ocupar uma linha inteira */
+    margin: 10px auto; /* Centraliza o botão */
+}
+
+/* Efeito hover */
+button:hover {
+    background-color: #6e0303; /* Amarelo mais claro ao passar o mouse */
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}

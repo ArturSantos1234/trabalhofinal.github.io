@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff3131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    max-height: 300px;
+}
+
+.botao1 {
+    margin-top: -110px; 
+}
+
+button {
+    background-color: #a70404; 
+    color: #FFFFFF; 
+    border: none; /* Remove a borda padrão do botão */
+    padding: 10px 20px; /* Adiciona 10px de preenchimento vertical e 20px de preenchimento horizontal dentro do botão */
+    border-radius: 25px; /* Arredonda as bordas do botão com um raio de 25px */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão, indicando que ele é clicável */
+    font-size: 16px; /* Define o tamanho da fonte do texto dentro do botão para 16px */
+    font-weight: bold; /* Define o peso da fonte para negrito, tornando o texto mais espesso */
+    transition: background-color 0.3s ease; /* usada para criar animações suaves entre estados de um elemento, como quando ele muda de cor, tamanho, opacidade, etc. */
+}
+
+button:hover {
+    background-color: #6e0303; /* Cor ao passar o mouse */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Financeira</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <p id="mostrar-salario"></p> <!-- Local onde o salário será mostrado -->
+            <p id="percentual-gasto">0%</p> <!-- Local onde a porcentagem será mostrada -->
+            <div id="progress-bar">
+                <div id="progress-bar-inner">0%</div>
+            </div>
+            <a href="about.html">Sobre</a>
+            <a href="services.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bem-vindo!</h2> <!-- Local onde o nome será mostrado -->
+            <div class="container-gastos">
+                <div class="coluna">
+                    <h3>Gastos Gerais</h3>
+                    <ul id="gastos-gerais-lista"></ul>
+                    <button class="btn-adicionar" onclick="adicionarItem('gastos-gerais')">Adicionar item +</button>
+                </div>
+
+                <div class="coluna">
+                    <h3>Lazer</h3>
+                    <ul id="lazer-lista"></ul>
+                    <button class="btn-adicionar" onclick="adicionarItem('lazer')">Adicionar item +</button>
+                </div>
+
+                <div class="coluna">
+                    <h3>Outros</h3>
+                    <ul id="viagens-lista"></ul>
+                    <button class="btn-adicionar" onclick="adicionarItem('viagens')">Adicionar item +</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site</p>
+    </footer>
+
+    <script src="js/inicio.js"></script> <!-- Link para o JS da página inicial -->
+</body>
+</html>

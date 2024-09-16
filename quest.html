@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas</title>
+    <link rel="stylesheet" href="css/quest.css"> <!-- Link para o CSS externo -->
+</head>
+<body>
+    <div id="q1" class="question active">
+        <h2>Qual o seu salário?</h2>
+        <input type="text" id="a1">
+        <div id="error1" class="error"></div> <!-- Área para a mensagem de erro -->
+        <button onclick="next1()">Próxima</button>
+    </div>
+
+    <div id="q2" class="question">
+        <h2>Qual seu nome?</h2>
+        <input type="text" id="a2">
+        <div id="error2" class="error"></div> <!-- Área para a mensagem de erro -->
+        <button onclick="next2()">Próxima</button>
+    </div>
+
+    <div id="q3" class="question">
+        <h2>Qual a sua profissão?</h2>
+        <input type="text" id="a3">
+        <div id="error3" class="error"></div> <!-- Área para a mensagem de erro -->
+        <button onclick="next3()">Finalizar</button>
+    </div>
+
+    <div id="q4" class="question">
+        <h2>Qual sua idade?</h2>
+        <input type="text" id="a4">
+        <div id="error4" class="error"></div> <!-- Área para a mensagem de erro -->
+        <button onclick="finalizar()">Finalizar</button>
+    </div>
+
+    <script src="js/quest.js"></script> <!-- Link para o JavaScript externo -->
+</body>
+</html>
